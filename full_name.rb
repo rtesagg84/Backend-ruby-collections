@@ -1,5 +1,5 @@
 def create_fullname
-      print "Do you want to enter your fulname ?"
+      print "Enter your nick name to  enter your full name :"
       fullname = gets.chomp
       hash ={"fullname" => fullname,"items" => Array.new}
       return hash
