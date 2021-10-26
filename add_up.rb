@@ -1,17 +1,17 @@
 
-# def add_up(i)
-#  sum = 1 
-# #  number = gets.chomp.to_i
-# if number > 0 
-#     sum += number
-#     Puts " sum:#{sum}"
-# end
-# end
 def ask(q)
     print   q + ""
-    num = gets.chomp
- puts "#{num}"
+    highst_num = gets.chomp.to_i.abs
+    lower_num = 1
+    sum = 0
+    while lower_num < highst_num 
+      puts "the list of the posetive  numbers : #{lower_num}"
+        sum += lower_num
+        lower_num += 1
+    end
+    puts "the sum of the posetive  numbers : #{sum}"
+   return highst_num
+   
 end
-
- number = ask("enter a  positive number : ")
-# add_up(ask())
+ number = ask("enter any  number to get the sum of all postive  numbers untill that number : ")
+  
