@@ -2,7 +2,7 @@
 def ask(q)
        print   q + ""
        highst_num = gets.chomp.to_i.abs
-       ower_num = 1
+       lower_num = 1
        sum = 0
     while lower_num < highst_num 
        puts "the list of the posetive  numbers : #{lower_num}"
@@ -13,5 +13,4 @@ def ask(q)
    return highst_num
    
 end
-number = ask("enter any  number to get the sum of all postive  numbers untill that number : ")
-  
+number = 3.times { ask("enter any  number to get the sum of all postive  numbers untill that number : ")}
